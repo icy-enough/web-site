@@ -1,0 +1,55 @@
+:root{
+    --lblue:#1439bd;  
+    --black: #000;
+    --white: #FFF;
+    --blue: #08348b;
+    --dblue: #0b1433;
+    --dvoid: #0E0B16;
+    --void: #572bd1;
+}
+
+.vdodiv{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+
+*::selection{
+    background-color: var(--lblue);
+    color: var(--dvoid);
+}
+
+
+body[theme="black"]{
+    background-color: var(--black);
+}
+ 
+body[theme="black"] .section{ 
+    color: var(--white);
+}
+
+body[theme="blue"]{
+    background-color: var(--blue);
+}
+
+body[theme="blue"] .section{
+    color: var(--dblue);
+}
+
+
+body[theme="void"]{
+    background-color: var(--dvoid);
+}
+
+body[theme="void"] .section{
+    color: var(--void);
+}
+
+body[theme="white"]{
+    background-color: var(--white);
+}
+
+body[theme="white"] .section{
+    color: var(--black);
+}
+
+
